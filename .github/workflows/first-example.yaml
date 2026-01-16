@@ -8,10 +8,13 @@ jobs:
         steps:
         - name: Checkout Repo
           uses: actions/checkout@v6
-        - name: Welcome Message
-          run: | 
-                echo "List and Read files"
-                ls -ltra
-                cat README.md
+
+        - name: List Repofiles
+          run:   ls -ltra
+
+        - name: Executing the shellscript
+          run:  ./asci-script.sh
+              
+  
          
         
